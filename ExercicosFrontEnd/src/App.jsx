@@ -1,39 +1,32 @@
-import HelloWorld from "./Componentes/HelloWorld";
-import CicloDeVida from "./Componentes/CicloDeVida ";
-import NomeIdade from "./Componentes/NomeIdade";
-import ListaDeTarefas from "./Componentes/ListaDeTarefas";
-import RenderizacaoCondicional from "./Componentes/RenderizacaoCondicional";
-import Contador from "./Componentes/Contador";
-import Cabeçalho from "./Componentes/Cabeçalho";
+
+
 import Inicio from "./paginas/Inicio";
 import Acerca from "./paginas/Acerca";
 import Contacto from "./paginas/Contacto";
 import Servicos from "./paginas/Servicos";
+import Exercicios from "./paginas/exercicios";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function App() {
+
  
+  function App() {
+    return (
+      <Inicio/>,
+      <BrowserRouter>
+        <Routes>
 
-  return (
-   //<HelloWorld/>
-    //<CicloDeVida/>
-    //<NomeIdade/>
-    //<ListaDeTarefas/>
-   // <RenderizacaoCondicional/>
-   // <Contador/>
-   <Cabeçalho/>,
-   <BrowserRouter>
-   <Routes>
-    <Route>
-          <Route path="/" exact component={<Inicio/>} />
-          <Route path="/acerca" component={<Acerca/>} />
-          <Route path="/contacto" component={<Contacto/>} />
-          <Route path="/servicos" component={<Servicos/>} />
-    </Route>
-   </Routes>
-   </BrowserRouter>
-  )
-}
+          <Route path="/" element={<Inicio />} />
+          <Route path="/acerca" element={<Acerca />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/exercicios" element={<Exercicios />} />
+        </Routes>
+      </BrowserRouter>
+    );
+  }
 
-export default App
+  
+
+export default App;

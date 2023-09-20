@@ -1,11 +1,11 @@
-import Cabeçalho from "../Componentes/Cabeçalho";
+import Cabecalho from "../Components/Cabecalho";
+
 
 function Inicio(){
 
     return(
         <div>
-<Cabeçalho/>
-        </div>
-    )
+<Cabecalho/>
+        </div>   )
 }
 export default Inicio

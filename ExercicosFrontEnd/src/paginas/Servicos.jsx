@@ -1,11 +1,13 @@
-import Cabeçalho from "../Componentes/Cabeçalho";
+import Cabecalho from "../Components/Cabecalho";
 
 function Servicos(){
 
     return(
         <div>
-<Cabeçalho/>
+<Cabecalho/>
+
         </div>
+       
     )
 }
 export default Servicos

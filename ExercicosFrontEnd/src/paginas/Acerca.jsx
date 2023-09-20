@@ -1,10 +1,10 @@
-import Cabeçalho from "../Componentes/Cabeçalho";
+import Cabecalho from "../Components/Cabecalho";
 
 function Acerca(){
 
     return(
         <div>
-<Cabeçalho/>
+<Cabecalho/>
         </div>
     )
 }
